@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style de base pour la barre de navigation */
+header nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #071c2e;
+}
+
+.logo img
+{
+  height: 2em;
+}
+
+.subscribe-button {
+  background-color: red;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+}
+.buttons
+{
+  display: none;
+}
+.breadcrumbs ol
+{
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumbs li
+{
+  padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    position: static;
+    transform: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* margin-right: auto;  */
+   }
+  .logo ul 
+  {
+    margin-left: 5em;
+  }
+  .buttons
+  {
+    display: flex;
+  }
+  .menu {
+    display: flex; /* Afficher le menu sur les écrans de bureau */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .menu li {
+    margin-right: 20px; /* Ajuster l'espacement entre les éléments du menu */
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff; /* Ou toute autre couleur */
+  }
+
+  .left-menu
+  {
+    display: none;
+  }
+  .right-menu
+  {
+    display: none;
+  }
+  .login-button {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    outline: none; /* Supprime la bordure de mise en surbrillance lorsqu'il est cliqué ou mis en focus */
+    color: #ffffff; /* Définissez la couleur du texte, ici blanc. */
+    background: none; /* Supprime le fond */
+    border: none; /* Supprime la bordure */
+    cursor: pointer; /* Change le curseur en pointeur lorsque survolé */
+  }
+
+
+  /* Styles supplémentaires pour les écrans de bureau ici */
+}
