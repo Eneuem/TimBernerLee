@@ -14,6 +14,10 @@ header nav {
   align-items: center;
   background-color: #071c2e;
 }
+a
+{
+  color: #14599D;
+}
 
 .logo img
 {
@@ -39,37 +43,42 @@ header nav {
 {
   display: flex;
   list-style-type: none;
-  margin: 20px 0px 0px 10px;
-}
-.breadcrumbs li
-{
-  padding-right: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: gray;
 }
 .badge {
-  background-color: orange;
-  color: #fff;
+  background-color: #FED7AA;
+  font-weight: bold;
   margin: 20px 0px 0px 10px;
-  padding: 5px 10px;
-  border-radius: 12px; 
-  font-size: 1em;
+  padding: 3px 5px;
+  border-radius: 9px; 
   display: inline-block; 
 }
-
+h1
+{
+  font-size: 2em;
+}
+h4
+{
+  font-style: italic;
+  color:gray;
+  margin-top: 10px;
+}
 .actions-button {
   background-color: white;
-  border: 1px solid gray; /* Bordure fine grise */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Petite ombre */
-  border-radius: 4px; /* Coins légèrement arrondis */
-  padding: 10px 20px; /* Espacement intérieur */
-  font-size: 16px; /* Taille du texte */
-  cursor: pointer; /* Change le curseur en pointeur lorsque survolé */
-  display: flex; /* Permet d'aligner les éléments à l'intérieur */
-  align-items: center; /* Alignement vertical des éléments à l'intérieur */
+  color:#14599D;
+  border: 1px solid gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  padding: 5px 10px; 
+  display: flex; 
+  align-items: center; 
 }
 
 .dots {
-  font-size: 24px; /* Taille des points */
-  margin-right: 10px; /* Espace entre les points et le texte */
+  font-size: 24px; 
+  margin-right: 10px; 
 }
 
 .title
@@ -81,7 +90,35 @@ header nav {
 }
 article
 {
-  margin: 20px, 0px, 0px, 10px
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.share-section
+{
+  display: none;
+}
+.full-width-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  color: #14599D;
+  border: 1px solid gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+.hamburger-icon {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+.article-details
+{
+  margin-top: 5px;
 }
 
 
@@ -94,7 +131,6 @@ article
     display: flex;
     align-items: center;
     margin-right: 20px;
-    /* margin-right: auto;  */
    }
   .logo ul 
   {
@@ -116,12 +152,12 @@ article
   }
 
   .menu li {
-    margin-right: 20px; /* Ajuster l'espacement entre les éléments du menu */
+    margin-right: 20px; 
   }
 
   .menu a {
     text-decoration: none;
-    color: #fff; /* Ou toute autre couleur */
+    color: #fff; 
   }
 
   .left-menu
@@ -133,16 +169,25 @@ article
     display: none;
   }
   .login-button {
-    text-decoration: none; /* Supprime le soulignement du lien */
-    outline: none; /* Supprime la bordure de mise en surbrillance lorsqu'il est cliqué ou mis en focus */
-    color: #ffffff; /* Définissez la couleur du texte, ici blanc. */
-    background: none; /* Supprime le fond */
-    border: none; /* Supprime la bordure */
-    cursor: pointer; /* Change le curseur en pointeur lorsque survolé */
+    text-decoration: none; 
+    outline: none; 
+    color: #ffffff; 
+    background: none; 
+    border: none; 
+    cursor: pointer;
   }
   .actions-button {
     display: none;
   }
+  .share-section
+{
+  display: flex;
+}
+.full-width-button
+{
+  display: none;
+}
+
  
 
   /* Styles supplémentaires pour les écrans de bureau ici */
