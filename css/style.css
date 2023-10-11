@@ -35,15 +35,57 @@ header nav {
 {
   display: none;
 }
-.breadcrumbs ol
+.breadcrumbs
 {
   display: flex;
   list-style-type: none;
+  margin: 20px 0px 0px 10px;
 }
 .breadcrumbs li
 {
   padding-right: 5px;
 }
+.badge {
+  background-color: orange;
+  color: #fff;
+  margin: 20px 0px 0px 10px;
+  padding: 5px 10px;
+  border-radius: 12px; 
+  font-size: 1em;
+  display: inline-block; 
+}
+
+.actions-button {
+  background-color: white;
+  border: 1px solid gray; /* Bordure fine grise */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Petite ombre */
+  border-radius: 4px; /* Coins légèrement arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Change le curseur en pointeur lorsque survolé */
+  display: flex; /* Permet d'aligner les éléments à l'intérieur */
+  align-items: center; /* Alignement vertical des éléments à l'intérieur */
+}
+
+.dots {
+  font-size: 24px; /* Taille des points */
+  margin-right: 10px; /* Espace entre les points et le texte */
+}
+
+.title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+article
+{
+  margin: 20px, 0px, 0px, 10px
+}
+
+
+
 
 @media (min-width: 768px) {
   .logo {
@@ -62,9 +104,13 @@ header nav {
   {
     display: flex;
   }
+  .badge
+  {
+    display: none;
+  }
   .menu {
-    display: flex; /* Afficher le menu sur les écrans de bureau */
-    margin: 0;
+    display: flex; 
+    align-items: baseline;
     padding: 0;
     list-style-type: none;
   }
@@ -94,7 +140,10 @@ header nav {
     border: none; /* Supprime la bordure */
     cursor: pointer; /* Change le curseur en pointeur lorsque survolé */
   }
-
+  .actions-button {
+    display: none;
+  }
+ 
 
   /* Styles supplémentaires pour les écrans de bureau ici */
 }
