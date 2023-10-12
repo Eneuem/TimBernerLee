@@ -23,7 +23,6 @@ header nav {
 a
 {
   color: #14599D;
-  text-decoration: none;
 }
 
 .logo img
@@ -55,15 +54,23 @@ a
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 15px;
+  color: black;
+}
+.breadcrumbs a
+{
+  text-decoration: none;
   color: gray;
 }
 .badge {
   background-color: #FED7AA;
   font-weight: bold;
-  margin: 20px 0px 0px 10px;
   padding: 3px 5px;
   border-radius: 9px; 
   display: inline-block; 
+}
+.badge-container
+{
+  padding-left: 10px;
 }
 h1
 {
@@ -100,8 +107,8 @@ h4
 }
 .div
 {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .media
 {
@@ -163,6 +170,12 @@ h4
   color: grey;
   padding-left: 10px;
 }
+figure
+{
+  border: 1px solid gray;
+  border-radius: 9px;
+  margin: 10px 10px;
+}
 .portrait
 {
   margin-top: 10px;
@@ -177,16 +190,14 @@ h4
   display: block;
   object-fit: cover;
 }
-figure
-{
-  border: 1px solid gray;
-  border-radius: 9px;
-  margin: 10px 10px;
-  }
 .portrait figcaption
 {
   margin-left: 10px ;
   margin-bottom: 10px;
+}
+.main-article a
+{
+  text-decoration: none;
 }
 .main-article
 {
@@ -220,10 +231,6 @@ figure
   align-items: center;
   justify-content: center;
   display: flex;
-}
-strong
-{
-  font-weight: 400;
 }
 .article-info-maxi
 {
