@@ -28,7 +28,7 @@ a
 
 .logo img
 {
-  height: 2em;
+  height: 1em;
 }
 
 .subscribe-button {
@@ -36,7 +36,6 @@ a
   font-weight: bold;
   border: none;
   border-radius: 7px;
-  margin-left: 10px;
   padding: 5px 5px;
   color: #fff;
   cursor: pointer;
@@ -239,18 +238,28 @@ strong
   padding-left: 10px;
   padding-bottom: 10px;
 }
+.related-content-button 
+{
+  display: none;
+}
 @media (min-width: 768px) 
 {
   h1 
   {
     padding-left: 10px;
+    padding-top: 10px;
+  }
+  h3 
+  {
+    font-family: var(--font-family-serif);
+    font-weight: lighter;
   }
   .logo {    
     position: static;
     transform: none;
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    gap: 5px;
   }
   .logo ul 
   {
@@ -259,6 +268,7 @@ strong
   .buttons
   {
     display: flex;
+    gap: 20px;
   }
   .badge
   {
@@ -308,7 +318,7 @@ strong
 }
 .icon-button 
 {
-  padding: 5px 5px;
+  padding: 10px 6px;
   background: #fff;
   border: 1px solid gray;
   border-radius: 9px;
@@ -362,30 +372,55 @@ figure
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 2px;
   font-size: x-small;
+}
+.c5
+{
+  padding-right: 5px;
 }
 .related-content-button 
 {
-  padding: 5px 5px;
+  display: flex;
+  align-items: baseline;
+  padding: 10px 10px;
   background: #fff;
   border: 1px solid gray;
   border-radius: 9px;
   color:#14599D;
   font-weight: bold;
-  text-align: center;
+  margin: auto;
+  gap: 4px;
 }
 .main-content
 {
   display: flex;
   flex-direction: row;
+  padding-top: 20px;
 }
 .main-article
 {
   order: 2;
+  width: 40%;
 }
 .main-p
 {
   order: 1;
+  width: 60%;
+  font-family: var(--font-family-serif);
+}
+.infos-maxi
+{
+  font-size: small;
+  padding-bottom: 20px;
+}
+figcaption
+{
+  padding-top: 5px;
+  font-size: small;
+}
+.media a
+{
+  font-size: small;
 }
 }
