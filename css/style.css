@@ -210,7 +210,7 @@ figure
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px; /* Taille du cercle blanc */
+  width: 50px;
   height: 50px;
   background-color: white;
   border-radius: 50%;
@@ -219,12 +219,10 @@ figure
   justify-content: center;
   display: flex;
 }
-.magnifier
+strong
 {
-  display: flex;
-  justify-content: center;
+  font-weight: 400;
 }
-
 
 @media (min-width: 768px) 
 {
@@ -284,11 +282,40 @@ figure
   }
   .share-section
 {
+  padding-top: 10px;
   display: flex;
+  gap: 4px;
+}
+.icon-button 
+{
+  padding: 5px 5px;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 9px;
+  color:#14599D;
+  font-weight: bold;
 }
 .full-width-button
 {
   display: none;
+}
+.podcast
+{
+  display: none;
+}
+.div
+{
+  border: 1px solid gray;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+.infos-mini
+{
+  display: none;
+}
+strong
+{
+  font-weight: bold;
 }
 
 }
