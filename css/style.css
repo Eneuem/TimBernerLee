@@ -23,6 +23,7 @@ header nav {
 a
 {
   color: #14599D;
+  text-decoration: none;
 }
 
 .logo img
@@ -52,8 +53,9 @@ a
   display: flex;
   gap: 10px;
   list-style-type: none;
-  margin-left: 20px;
-  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   color: gray;
 }
 .badge {
@@ -134,7 +136,7 @@ h4
   border: 1px solid gray;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .hamburger-icon {
@@ -200,6 +202,7 @@ figure
 .infos
 {
   padding-left: 10px;
+  row-gap: 15px;
 }
 .credited
 {
@@ -223,9 +226,20 @@ strong
 {
   font-weight: 400;
 }
-
+.article-info-maxi
+{
+  display: none;
+}
+.alternate-maxi
+{
+  display: none;
+}
 @media (min-width: 768px) 
 {
+  h1 
+  {
+    padding-left: 10px;
+  }
   .logo {    
     position: static;
     transform: none;
@@ -283,6 +297,7 @@ strong
   .share-section
 {
   padding-top: 10px;
+  padding-left: 15px;
   display: flex;
   gap: 4px;
 }
@@ -317,5 +332,42 @@ strong
 {
   font-weight: bold;
 }
-
+figure
+{
+  border: none;
+  margin: 10px 10px;
+}
+.article-info-mini
+{
+  display: none;
+}
+.article-info-maxi
+{
+  padding-left: 10px;
+  display: flex;
+}
+.title
+{
+  display: flex;
+  flex-direction: column;
+}
+.alternate-maxi
+{
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: x-small;
+}
+.related-content-button 
+{
+  padding: 5px 5px;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 9px;
+  color:#14599D;
+  font-weight: bold;
+  text-align: center;
+}
 }
