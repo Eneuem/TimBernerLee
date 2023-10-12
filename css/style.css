@@ -234,6 +234,11 @@ strong
 {
   display: none;
 }
+.main-p
+{
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
 @media (min-width: 768px) 
 {
   h1 
@@ -369,5 +374,18 @@ figure
   color:#14599D;
   font-weight: bold;
   text-align: center;
+}
+.main-content
+{
+  display: flex;
+  flex-direction: row;
+}
+.main-article
+{
+  order: 2;
+}
+.main-p
+{
+  order: 1;
 }
 }
